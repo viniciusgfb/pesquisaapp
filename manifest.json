@@ -1,0 +1,15 @@
+{
+  "name": "Nome do Seu Aplicativo",
+  "short_name": "SeuApp",
+  "start_url": "index.html",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#000000",
+  "icons": [
+    {
+      "src": "icone.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
