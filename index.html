@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang=pt-BR dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Pesquisas JW</title>
+    <style>
+      html {
+        zoom: 1.5; /* Aumenta para 120% do tamanho normal */
+      }
+      h1{
+        font-size: 25px
+      }
+      body {background-color: lightgray}
+      body {text-align: center}
+      .button {
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 2px 1px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button1 {
+  background-color: white;
+  color: black;
+  border: 2px solid #008CBA;
+}
+.button1:hover {
+  background-color: #008CBA;
+  color: white;
+}
+.button2 {
+  background-color: white;
+  color: black;
+  border: 2px solid #571B7E;
+}
+.button2:hover {
+  background-color: #571B7E;
+  color: white;
+}
+
+/* CSS */
+.button-30 {
+  align-items: bottom;
+  appearance: none;
+  background-color: #FCFCFD;
+  border-radius: 4px;
+  border-width: 0;
+  box-sizing: border-box;
+  color: #36395A;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: "JetBrains Mono",monospace;
+  height: 25px;
+  justify-content: center;
+  line-height: 0;
+  list-style: none;
+  overflow: hidden;
+  padding-left: 10px;
+  padding-right: 10px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: box-shadow .15s,transform .15s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  will-change: box-shadow,transform;
+  font-size: 18px;
+  transform: translateY(4px)
+}
+
+.button-30:focus {
+  box-shadow: #D6D6E7 0 0 0 1.5px inset, rgba(45, 35, 66, 0.4) 0 2px 4px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+}
+
+.button-30:hover {
+  box-shadow: rgba(45, 35, 66, 0.4) 0 4px 8px, rgba(45, 35, 66, 0.3) 0 7px 13px -3px, #D6D6E7 0 -3px 0 inset;
+  transform: translateY(-2px);
+}
+
+.button-30:active {
+  box-shadow: #D6D6E7 0 3px 7px inset;
+  transform: translateY(2px);
+}
+
+
+  .radio-wrapper-20 input[type="radio"]:focus {
+    outline: 0;
+    border-color: #2260ff;
+    box-shadow: 0 0 0 4px #b5c9fc;
+  }
+
+  .radio-wrapper-20 {
+    font-size: 14px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 0.5rem;
+    justify-content: center;
+  }
+
+  .radio-wrapper-20 input[type="radio"] {
+    clip: rect(0 0 0 0);
+    clip-path: inset(100%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+  }
+
+  .radio-wrapper-20 input[type="radio"]:checked + span {
+    box-shadow: 0 0 0 0.0625em #0043ed;
+    background-color: #dee7ff;
+    z-index: 1;
+    color: #0043ed;
+  }
+
+  .radio-wrapper-20 label span {
+    display: block;
+    cursor: pointer;
+    background-color: #fff;
+    padding: 0.375em .75em;
+    position: relative;
+    margin-left: .0625em;
+    padding-top: 0em;
+    padding-bottom: 0.45em;
+    box-shadow: 0 0 0 0.0625em #b5bfd9;
+    letter-spacing: .05em;
+    color: #3e4963;
+    text-align: center;
+    transition: background-color .5s ease;
+  }
+
+  .radio-wrapper-20 label:first-child span {
+    border-radius: .375em 0 0 .375em;
+  }
+
+  .radio-wrapper-20 label:last-child span {
+    border-radius: 0 .375em .375em 0;
+  }
+
+
+  </style>
+  </head>
+  <body>
+    <h1>Pesquisas
+    <img src="jw.png" alt="HTML5 Icon" style="height:40px;transform: translateY(10px);" >
+    </h1>
+    <p>Faça sua pesquisa avançada através do site jw.org. <br>
+      Pesquise por vídeos, publicações ou na Biblioteca on-line.</p>
+    <form>
+      <label for="pesquisa">O que você deseja pesquisar?</label>
+      <br><br>
+      <input type="textbox" id="pesquisa" style="font-size:15px; height:25px ;border-radius: 4px;border-width: 0;box-sizing: border-box;" name="pesquisa" required autofocus placeholder="Escreva aqui sua pesquisa">
+      <button type="submit" class="button-30" role="button" onclick="myFunction()">
+      <svg class="svg-inline--fa jwi-magnifying-glass fa-w-16" style="height:20px;" aria-hidden="true" focusable="false" data-prefix="jwf-jw-icons-external" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-fa-i2svg=""><path fill="currentColor" d="M23.354 22.646l-5-5-.012-.007a8.532 8.532 0 10-.703.703l.007.012 5 5a.5.5 0 00.707-.707zM12 19.5a7.5 7.5 0 117.5-7.5 7.508 7.508 0 01-7.5 7.5z"></path></svg>
+      </button>
+      <br><br>
+
+      <div class="radio-wrapper-20">
+        <label for="bibliotecaonline">
+          <input type="radio" id="bibliotecaonline" name="tipodepesquisa" onclick="mostrar()" checked >
+          <span class="name">Biblioteca Online
+            <img src="wol.png" alt="HTML5 Icon" style="height:20px;transform: translateY(5px);">
+          </span>
+        </label>
+        <label for="video">
+          <input type="radio" id="video" name="tipodepesquisa" onclick="esconder()">
+          <span class="name">Vídeo
+            <img src="jw.png" alt="HTML5 Icon" style="height:20px;transform: translateY(5px);">
+          </span>
+        </label>
+        <label for="imagem">
+          <input type="radio" id="imagem" name="tipodepesquisa" onclick="esconder()">
+          <span class="name">Imagem
+            <img src="imagem.png" alt="HTML5 Icon" style="height:20px;transform: translateY(5px);">
+          </span>
+        </label>
+      </div>
+
+      <br>
+
+      <a id="palavras">Palavras localizadas no(a) mesmo(a)</a>
+      <div id="palavras1" class="radio-wrapper-20" >
+        <label for="localizadofrase">
+          <input type="radio" id="localizadofrase" name="localizado" class="localizado" checked>
+          <span class="name" style="padding-top: 0.4em;">frase</span>
+        </label>
+        <label for="localizadoparagrafo">
+          <input type="radio" id="localizadoparagrafo" name="localizado" class="localizado">
+          <span class="name" style="padding-top: 0.4em;">parágrafo</span>
+        </label>
+        <label for="localizadoartigo">
+          <input type="radio" id="localizadoartigo" name="localizado" class="localizado" >
+          <span class="name" style="padding-top: 0.4em;">artigo</span>
+        </label>
+      </div>
+
+    </form>
+    <script type="text/javascript">
+      function esconder(){
+        document.getElementById("palavras").style.display = "none";
+        document.getElementById("palavras1").style.display = "none";
+        document.getElementById("localizadofrase").style.display = "none";
+        document.getElementById("localizadoparagrafo").style.display = "none";
+        document.getElementById("localizadoartigo").style.display = "none";
+        document.getElementById("llocalizadofrase").style.display = "none";
+        document.getElementById("llocalizadoparagrafo").style.display = "none";
+        document.getElementById("llocalizadoartigo").style.display = "none";
+      };
+      function mostrar(){
+        document.getElementById("palavras").style.display = "";
+        document.getElementById("palavras1").style.display = "";
+        document.getElementById("localizadofrase").style.display = "";
+        document.getElementById("localizadoparagrafo").style.display = "";
+        document.getElementById("localizadoartigo").style.display = "";
+        document.getElementById("llocalizadofrase").style.display = "";
+        document.getElementById("llocalizadoparagrafo").style.display = "";
+        document.getElementById("llocalizadoartigo").style.display = "";
+      };
+      function myFunction() {
+        var p = document.getElementById('pesquisa').value;
+        var tpbibliotecaonline = document.getElementById('bibliotecaonline').checked;
+        if (tpbibliotecaonline) {
+          var link = "https://wol.jw.org/pt/wol/s/r5/lp-t?q=" ;
+          link = link + p;
+          var localizado=document.getElementById('localizadofrase').checked;
+          if (localizado) {
+            link = link + "&st=&p=sen&r=occ";
+          };
+          var localizado=document.getElementById('localizadoparagrafo').checked;
+          if (localizado) {
+            link = link + "&st=&p=par&r=occ";
+          };
+          var localizado=document.getElementById('localizadoartigo').checked;
+          if (localizado) {
+            link = link + "&st=&p=doc&r=occ";
+          };
+        };
+        var tpvideo = document.getElementById('video').checked;
+        if (tpvideo) {
+          var link = "https://www.jw.org/pt/busca/?q=" ;
+          link = link + p + "&link=%2Fresults%2FT%2Fvideos%3Fq%3D";
+        };
+        var tpimagem = document.getElementById('imagem').checked;
+        if (tpimagem) {
+          var link = "https://cse.google.com/cse?cx=3c6c549b8ed4c34fe#gsc.tab=0&gsc.q=" ;
+          link = link + p;
+        };
+        window.open(link);
+      };
+    </script>
+
+    <br>
+    <hr>
+
+    <h1>Pesquise por Ilustrações</h1>
+
+    <form>
+      <input type="textbox" style="font-size:15px ;height:25px ;border-radius: 4px;border-width: 0;box-sizing: border-box;" id="pesquisailu" name="pesquisailu" required autofocus placeholder="Escreva uma palavra">
+      <button type="submit" class="button-30" role="button" onclick="myFunctionilu()">
+      <svg class="svg-inline--fa jwi-magnifying-glass fa-w-16" style="height:20px;" aria-hidden="true" focusable="false" data-prefix="jwf-jw-icons-external" data-icon="magnifying-glass" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-fa-i2svg=""><path fill="currentColor" d="M23.354 22.646l-5-5-.012-.007a8.532 8.532 0 10-.703.703l.007.012 5 5a.5.5 0 00.707-.707zM12 19.5a7.5 7.5 0 117.5-7.5 7.508 7.508 0 01-7.5 7.5z"></path></svg>
+      </button>
+    </form>
+
+    <script type="text/javascript">
+      function myFunctionilu() {
+        var ilu = document.getElementById('pesquisailu').value;
+        var linkilu = "https://wol.jw.org/pt/wol/d/r5/lp-t/1200272859?q=" + ilu + "&p=par";
+        window.open(linkilu);
+      };
+    </script>
+    <br>
+    <hr>
+    <h1 font-size="20px" >Índice de textos (1991-2025)
+      <img src="jwbible.jpg" alt="HTML5 Icon" style="height:40px;">
+    </h1>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270001" class="button button2">Gên</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270002" class="button button2">Êx</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270003" class="button button2">Le</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270004" class="button button2">Núm</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270005" class="button button2">De</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270006" class="button button2">Jos</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270007" class="button button2">Jz</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270008" class="button button2">Ru</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270009" class="button button2">1Sa</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270010" class="button button2">2Sa</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270011" class="button button2">1Rs</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270012" class="button button2">2Rs</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270013" class="button button2">1Cr</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270014" class="button button2">2Cr</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270015" class="button button2">Esd</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270016" class="button button2">Ne</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270017" class="button button2">Est</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270018" class="button button2">Jó</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270019" class="button button2">Sal</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270020" class="button button2">Pr</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270021" class="button button2">Ec</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270022" class="button button2">Cân</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270023" class="button button2">Is</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270024" class="button button2">Je</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270025" class="button button2">La</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270026" class="button button2">Ez</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270027" class="button button2">Da</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270028" class="button button2">Os</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270029" class="button button2">Jl</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270030" class="button button2">Am</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270031" class="button button2">Ob</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270032" class="button button2">Jon</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270033" class="button button2">Miq</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270034" class="button button2">Na</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270035" class="button button2">Hab</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270036" class="button button2">Sof</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270037" class="button button2">Ag</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270038" class="button button2">Za</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270039" class="button button2">Mal</a>
+    <hr>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270040" class="button button2">Mat</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270041" class="button button2">Mr</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270042" class="button button2">Lu</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270043" class="button button2">Jo</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270044" class="button button2">At</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270045" class="button button2">Ro</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270046" class="button button2">1Co</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270047" class="button button2">2Co</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270048" class="button button2">Gál</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270049" class="button button2">Ef</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270050" class="button button2">Fil</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270051" class="button button2">Col</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270052" class="button button2">1Te</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270053" class="button button2">2Te</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270054" class="button button2">1Ti</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270055" class="button button2">2Ti</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270056" class="button button2">Ti</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270057" class="button button2">Flm</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270058" class="button button2">He</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270059" class="button button2">Tg</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270060" class="button button2">1Pe</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270061" class="button button2">2Pe</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270062" class="button button2">1Jo</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270063" class="button button2">2Jo</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270064" class="button button2">3Jo</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270065" class="button button2">Ju</a>
+    <a href="https://wol.jw.org/pt/wol/d/r5/lp-t/1200270066" class="button button2">Ap</a>
+  </body>
+</html>
