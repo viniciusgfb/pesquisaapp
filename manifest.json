@@ -1,6 +1,6 @@
 {
   "name": "Nome do Seu Aplicativo",
-  "short_name": "SeuApp",
+  "short_name": "Pesquisa no JW",
   "start_url": "index.html",
   "display": "standalone",
   "background_color": "#ffffff",
