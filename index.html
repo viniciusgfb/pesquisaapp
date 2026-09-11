@@ -1,6 +1,22 @@
 <!DOCTYPE html>
 <html lang=pt-BR dir="ltr">
   <head>
+            <!-- Vincula o Manifesto -->
+        <link rel="manifest" href="manifest.json">
+        
+        <!-- Configurações específicas para o iOS (iPhone) abrir como App -->
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+        <meta name="apple-mobile-web-app-title" content="SeuApp">
+        <link rel="apple-touch-icon" href="icone.png">
+        
+        <!-- Script para ativar o Service Worker -->
+        <script>
+          if ('serviceWorker' in navigator) {
+            navigator.serviceWorker.register('sw.js');
+          }
+        </script>
+
     <meta charset="utf-8">
     <title>Pesquisas JW</title>
     <style>
